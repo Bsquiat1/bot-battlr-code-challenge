@@ -1,99 +1,118 @@
 body {
-  background-color: #5d5d5d;
-  font-family: Arial, sans-serif;
-  color: #f4f4f4;
+  background-color: #3d3d3d;
+  color: #f9f9f9;
+  font-family: "Futura", sans-serif;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 48px;
   text-align: center;
-  margin: 2rem 0;
-  text-shadow: 2px 2px #000;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  text-shadow: 3px 3px #000000;
 }
 
 .bot-card {
-  background-color: #1c1c1c;
-  color: #f4f4f4;
-  border-radius: 10px;
-  padding: 1rem;
-  margin: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 2px 2px #000;
+  background-color: #2f2f2f;
+  color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 3px 3px 5px #000000;
+  margin-bottom: 20px;
+  width: 280px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+}
+
+.bot-card:hover {
+  cursor: pointer;
+  background-color: #4f4f4f;
 }
 
 .bot-card img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  margin-bottom: 1rem;
-  box-shadow: 2px 2px #000;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
-.bot-card h2 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-  text-shadow: 1px 1px #000;
+.bot-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-.bot-card p {
-  margin: 0;
-  font-size: 1.2rem;
+.bot-info {
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
-.bot-collection {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.bot-collection > * {
-  flex: 1 0 25%;
-  max-width: 300px;
-}
-
-.your-bot-army {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.your-bot-army > * {
-  flex: 1 0 25%;
-  max-width: 300px;
-}
-
-.your-bot-army .bot-card {
-  border-color: #f4f4f4;
-}
-
-.your-bot-army .bot-card img {
-  border-color: #f4f4f4;
-}
-
-.your-bot-army .bot-card h2 {
-  color: #f4f4f4;
-}
-
-.your-bot-army .bot-card p {
-  color: #f4f4f4;
-}
-
-.button {
-  background-color: #f4f4f4;
-  color: #1c1c1c;
+.bot-enlist-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border-radius: 8px;
   border: none;
-  border-radius: 5px;
-  padding: 0.5rem 1rem;
-  font-size: 1.2rem;
-  margin: 0.5rem;
+  background-color: #00bfff;
+  color: #f9f9f9;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
   cursor: pointer;
-  box-shadow: 1px 1px #000;
-  transition: all 0.2s;
+  transition: all 0.3s ease-in-out;
 }
 
-.button:hover {
-  transform: scale(1.05);
-  box-shadow: 2px 2px #000;
+.bot-enlist-btn:hover {
+  background-color: #1e90ff;
+}
+
+.bot-release-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: #ff4500;
+  color: #f9f9f9;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.bot-release-btn:hover {
+  background-color: #ff6347;
+}
+
+.bot-discharge-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: #ff0000;
+  color: #f9f9f9;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.bot-discharge-btn:hover {
+  background-color: #ff3333;
+}
+
+.bot-count {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.bot-army-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
 }
