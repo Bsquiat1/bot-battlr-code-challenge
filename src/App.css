@@ -1,38 +1,99 @@
-.App {
+body {
+  background-color: #5d5d5d;
+  font-family: Arial, sans-serif;
+  color: #f4f4f4;
+}
+
+h1 {
+  font-size: 3rem;
   text-align: center;
+  margin: 2rem 0;
+  text-shadow: 2px 2px #000;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bot-card {
+  background-color: #1c1c1c;
+  color: #f4f4f4;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 2px 2px #000;
+}
+
+.bot-card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  box-shadow: 2px 2px #000;
+}
+
+.bot-card h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 1px 1px #000;
+}
+
+.bot-card p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.bot-collection {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.bot-collection > * {
+  flex: 1 0 25%;
+  max-width: 300px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.your-bot-army {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.your-bot-army > * {
+  flex: 1 0 25%;
+  max-width: 300px;
+}
+
+.your-bot-army .bot-card {
+  border-color: #f4f4f4;
+}
+
+.your-bot-army .bot-card img {
+  border-color: #f4f4f4;
+}
+
+.your-bot-army .bot-card h2 {
+  color: #f4f4f4;
+}
+
+.your-bot-army .bot-card p {
+  color: #f4f4f4;
+}
+
+.button {
+  background-color: #f4f4f4;
+  color: #1c1c1c;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  box-shadow: 1px 1px #000;
+  transition: all 0.2s;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 2px #000;
 }
